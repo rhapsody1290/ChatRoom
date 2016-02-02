@@ -11,4 +11,8 @@
 
 客户端要点:
 
-1. 客户端有两条线程，一条为UI界面，响应用户动作，并将用户输入的数据写入到Socket对应的输出流中；另一条读取Socket对应输入流中的数据，即从服务器端发送过来的数据，显示在界面中
+1. 客户端有两条线程，一条为UI界面，将用户输入的数据写入到Socket对应的输出流中；另一条读取Socket对应输入流中的数据，即从服务器端发送过来的数据，显示在界面中
+
+2. Handler在传递过程中，注意创建对象，防止出现空指针的情况
+
+3. 需要在AndroidManifest.xml加上<uses-permission android:name="android.permission.INTERNET" />，即网络访问权限
