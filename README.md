@@ -15,4 +15,4 @@
 
 2. Handler在传递过程中，注意创建对象，防止出现空指针的情况
 
-3. 需要在AndroidManifest.xml加上<uses-permission android:name="android.permission.INTERNET" />，即网络访问权限
+3. 需要在AndroidManifest.xml加上\<uses-permission android:name="android.permission.INTERNET" />，即网络访问权限
